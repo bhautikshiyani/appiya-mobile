@@ -4,7 +4,7 @@
 		<title>Appiya - App Landing Page</title>
 		<link rel="icon" href="image/favicon.ico" type="image/favicon" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+		<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 		<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
 		<link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/animate.min.css" type="text/css" />
@@ -16,7 +16,7 @@
 		<script src="js/owl.carousel.min.js"></script>
 		
 		
-		<script data-ad-client="ca-pub-7581980287524818" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
 		<script>
 			$(document).ready(function(){
@@ -61,17 +61,15 @@
 			});
 
 
-				
-					//~ Scroll to Top
-					$(document).ready(function(){
+						$(document).ready(function(){
 						$(window).scroll(function(){
-							if ($(this).scrollTop() > 100) {
-								$('html').addClass('on');
-							} else {
-								$('html').removeClass('on');
+							if($(this).scrollTop() > 500){
+								$('.top-btn').fadeIn();
+							}
+							else{
+								$('.top-btn').fadeOut();
 							}
 						});
-						//Click event to scroll to top
 						$(".top-btn").click(function(){
 							$('body').animate({scrollTop : 0} , 800);
 						});
@@ -84,6 +82,9 @@
 					$(document).ready(function(){
 						$(".toggle-manu").click(function(){
 							$("html").toggleClass("show");
+						})
+						$(".close").click(function(){
+							$("html").removeClass("show");	
 						})
 
 						$(".plus").click(function(){
@@ -100,7 +101,7 @@
 
 						$(window).scroll(function(){
 							var scroll = $(window).scrollTop();
-							if (scroll>50){
+							if (scroll>100){
 								$("header").addClass("colorss");
 							}
 							else{
@@ -371,13 +372,14 @@
 							<i class="icofont-navigation-menu"></i>
 						</div>
 							<nav>
+								<div class="close"><i class="icofont-close-squared-alt"></i></div>
 								<ul>
 									<li><a href="#">Home</a></li>
-									<li><a href="#">About</a></li>
+									<li><a href="#">About US</a></li>
 									<li><a href="#">Feature</a></li>					
-									<li><a href="#">Testimonial</a></li>
-									<li><a href="#">Screenshot</a></li>
-									<li><a href="#">Price</a></li>
+									<li><a href="#">Testimonials</a></li>
+									<li><a href="#">Screenshots</a></li>
+									<li><a href="#">Pricing</a></li>
 									<li class="sub-manu-add"><a href="#">Blog <i class="icofont-rounded-down"></i></a>
 										<span class="plus"><i class="icofont-plus"></i></span>
 										<ul class="sub-menu">
@@ -392,7 +394,7 @@
 											<li><a href="#">&nbsp &nbsp Single right sidebar</a></li>
 										</ul>
 									</li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="#">Contact US</a></li>
 								</ul>	
 							</nav>
 				
@@ -510,7 +512,7 @@
 						<P>Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and travelling. Allowance sweetness direction to as necessary. Principle oh explained excellent do my suspected conveying in. Excellent you did therefore perfectly supposing described.</P>
 						<div class="more-detail-btn-main">
 							<div class="more-detail-btn animate-btn">
-								<a href="#">More Detail</a>
+								<a href="#">more detail</a>
 							</div>
 						</div>
 					</div>
